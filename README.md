@@ -1,0 +1,4 @@
+PokemonGO Pokedex
+
+ReactJS,
+Redax

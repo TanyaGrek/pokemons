@@ -21,7 +21,7 @@ export function addActiveItem(pokemon) {
     }
 }
 
-export function filterItems(pokemons,) {
+export function filterItems(pokemons) {
     return{
         type: types.FILTER_ITEM,
         payload: pokemons,

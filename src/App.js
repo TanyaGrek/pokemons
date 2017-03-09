@@ -41,7 +41,8 @@ class App extends React.Component {
         store.dispatch(sortedItems(pokemons));
     }
 
-    handleLoadNext(){
+    handleLoadNext(event){
+        event.preventDefault();
         pokeApi.addPokemonList(this.props.next);
     }
 
@@ -53,11 +54,9 @@ class App extends React.Component {
                     <img className="logoImage" src="https://www.apple-iphone.ru/wp-content/uploads/2016/11/pokemon-go-2-1.png" alt="LOGO"/>
                     <img className="toolBarImage" src="https://johanesekajaya.com/wp-content/uploads/2016/07/025Pikachu_OS_anime_11.png" alt="pikachu" />
                 </div>
-                <div className="toolBar nav">
-                    <div className="sortBar col-sm-offset-1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <button className="sortBtn btn btn-default" onClick={this.handleSort.bind(this)}>Sort by name</button>
-                    </div>
-                    <div className="searchBar col-xs-4 col-sm-4 col-md-4 col-lg-4"><span>Search </span>
+                <div className="toolBar nav row">
+                    <div className="searchBar  col-sm-offset-3 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <span>Search </span>
                         <form onSubmit={this.handleSearch.bind(this)}>
                             <div className="input-group">
                                 <input type="text" ref="searchInput" className="form-control" placeholder="Enter name or ID" onChange={this.handleSearchQuery.bind(this)} />

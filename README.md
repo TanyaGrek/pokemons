@@ -1,4 +1,8 @@
 PokemonGO Pokedex
 
+Using:
 ReactJS,
-Redax
+Redux, 
+LocalStorage,
+Rest API,
+Bootstrap

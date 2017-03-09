@@ -1,5 +1,7 @@
 PokemonGO Pokedex
 
+http://tanyagrek.esy.es/pokemons/
+
 Using:
 ReactJS,
 Redux, 

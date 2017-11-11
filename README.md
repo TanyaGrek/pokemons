@@ -1,6 +1,6 @@
 PokemonGO Pokedex
 
-http://tanyagrek.esy.es/pokemons/
+http://tanyagrek.zzz.com.ua/pokemons/
 
 Using:
 ReactJS,
